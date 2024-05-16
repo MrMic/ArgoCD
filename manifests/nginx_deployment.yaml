@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: nginx-deploy
-  name: nginx-deploy
+  name: nginx-deploy-2
 spec:
   replicas: 3
   selector:
