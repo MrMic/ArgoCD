@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     chart: httpd
-    repoURL: https://github.com/MrMic/argocd.git/httpd
+    repoURL: https://github.com/MrMic/argocd.git
     targetRevision: 0.1.0
     helm:
       releaseName: httpd
