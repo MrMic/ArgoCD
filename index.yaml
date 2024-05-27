@@ -3,12 +3,12 @@ entries:
   httpd:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-05-27T21:19:12.069292832+02:00"
+    created: "2024-05-27T21:32:19.187568284+02:00"
     description: A Helm chart for Kubernetes
     digest: 15fd47887e67bc2caf9356ad76da28a0ec0cec9dcf0fd83d5e4ccf07181211e6
     name: httpd
     type: application
     urls:
-    - https://github.com/MrMic/argocd.git/gh-pages/httpd-0.1.0.tgz
+    - https://github.com/MrMic/argocd.git/httpd-0.1.0.tgz
     version: 0.1.0
-generated: "2024-05-27T21:19:12.067231827+02:00"
+generated: "2024-05-27T21:32:19.186626216+02:00"
