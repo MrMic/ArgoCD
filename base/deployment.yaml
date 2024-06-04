@@ -11,18 +11,19 @@ spec:
     metadata:
       labels:
         app: caddy
-  spec:
-    containers:
-      - image: caddy:alpine
-        name: caddy
-        ports:
-          - containerPort: 80
-            name: http
-        volumeMounts:
-          - name: caddy-config
-            mountPath: /etc/caddy/
-            readOnly: true
-    volumes:
-      - name: caddy-config
-        configMap:
-          name: caddy-config
+    spec:
+      containers:
+        - image: caddy:alpine
+          name: caddy
+          ports:
+            - containerPort: 80
+              name: http
+              protocol: TCP
+          volumeMounts:
+            - name: caddy-config
+              mountPath: /etc/caddy/
+              readOnly: true
+      volumes:
+        - name: caddy-config
+          configMap:
+            name: caddy-config
