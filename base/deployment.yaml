@@ -13,8 +13,8 @@ spec:
         app: caddy
   spec:
     containers:
-      - name: caddy
-        image: caddy
+      - image: caddy:alpine
+        name: caddy
         ports:
           - containerPort: 80
             name: http
